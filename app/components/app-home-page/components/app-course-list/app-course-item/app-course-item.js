@@ -1,9 +1,9 @@
 function AppCourseItem() {
   let $ctrl = this;
 
-  $ctrl.handleDelete = function() {
-    $ctrl.onDelete({courseId: $ctrl.course.id})
-  };
+  // $ctrl.handleDelete = function() {
+  //   $ctrl.onDelete({courseId: $ctrl.course.id})
+  // };
 }
 
 angular
@@ -11,8 +11,10 @@ angular
   .component('appCourseItem', {
     templateUrl: './app/components/app-home-page/components/app-course-list/app-course-item/app-course-item.html',
     controller: AppCourseItem,
+    require: {
+      listCtrl: '^appCourseList'
+    },
     bindings: {
-      course: '<',
-      onDelete: '&',
+      course: '<'
     }
   })

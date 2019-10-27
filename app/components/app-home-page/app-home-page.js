@@ -7,6 +7,7 @@ function AppHomePage(courseService) {
   };
   
   $ctrl.handleDeleteCourse = function(courseId) {
+    console.log('test');
     courseService.deleteDataById(courseId);
     $ctrl.courses = courseService.getData();
   }

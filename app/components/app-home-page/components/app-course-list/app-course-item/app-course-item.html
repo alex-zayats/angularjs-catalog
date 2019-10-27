@@ -22,7 +22,7 @@
       <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
       Edit
     </button>
-    <button class="common-button course-item-button" ng-click="$ctrl.handleDelete()">
+    <button class="common-button course-item-button" data-ng-click="$ctrl.listCtrl.onDeleteCourse({courseId: $ctrl.course.id})">
       <i class="fa fa-trash-o" aria-hidden="true"></i>
       Delete
     </button>

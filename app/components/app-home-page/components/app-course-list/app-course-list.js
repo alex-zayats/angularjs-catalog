@@ -1,9 +1,9 @@
 function AppCourseList() {
   let $ctrl = this;
 
-  $ctrl.handleDelete = function(courseId) {
-    $ctrl.onDeleteCourse({courseId: courseId});
-  }
+  // $ctrl.handleDelete = function(courseId) {
+  //   $ctrl.onDeleteCourse({courseId: courseId});
+  // }
 }
 
 angular
